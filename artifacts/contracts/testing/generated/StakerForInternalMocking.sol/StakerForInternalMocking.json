@@ -1,0 +1,499 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "StakerForInternalMocking",
+  "sourceName": "contracts/testing/generated/StakerForInternalMocking.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "_calculateAccumulatedFloatAndExecuteOutstandingShiftsMock",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "floatReward",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_calculateAccumulatedFloatInRangeMock",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "floatReward",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_calculateFloatPerSecondMock",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "longFloatPerSecond",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "shortFloatPerSecond",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_calculateNewCumulativeIssuancePerStakedSynthMock",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "longCumulativeRates",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "shortCumulativeRates",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_calculateTimeDeltaFromLastAccumulativeIssuancePerStakedSynthSnapshotMock",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "timeDelta",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_changeBalanceIncentiveParametersMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_changeFloatPercentageMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_changeUnstakeFeeMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "name": "_getKValueMock",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "name": "_getMarketLaunchIncentiveParametersMock",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "period",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "multiplier",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "_mintAccumulatedFloatAndExecuteOutstandingShiftsMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32[]",
+          "name": "",
+          "type": "uint32[]"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "_mintAccumulatedFloatAndExecuteOutstandingShiftsMultiMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_mintFloatMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "name": "_updateUsersStakedPosition_mintAccumulatedFloatAndExecuteOutstandingShiftsMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_withdrawMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "initializeMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "onlyAdminModifierLogicMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "onlyLongShortModifierLogicMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "onlyValidSyntheticModifierLogicMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "name": "shiftTokensMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "stakeFromUserMock",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506107db806100206000396000f3fe608060405234801561001057600080fd5b50600436106101375760003560e01c8063978210d4116100b8578063cd1a7b271161007c578063cd1a7b271461023d578063d969e8771461024b578063e228b2fa14610259578063e56acd961461026c578063e69ba10714610280578063e9c7ee181461029357610137565b8063978210d4146101e65780639dd912f9146101f45780639ff975171461021c578063c6b4766d1461022f578063c73fe5571461019457610137565b80633a27cdde116100ff5780633a27cdde146101a657806343500c4e1461017c5780634fb3943a146101b457806366a9e7c2146101c55780636b2c5c69146101d857610137565b8063057981ba1461013c5780630bfa5be0146101565780631b2614341461017c578063214e2e06146101815780632de9dac814610194575b600080fd5b61015461014a366004610427565b5050505050505050565b005b610169610164366004610645565b6102a1565b6040519081526020015b60405180910390f35b610154565b61015461018f366004610677565b505050565b6101546101a23660046104b6565b5050565b6101546101a23660046104df565b6101546101c236600461062b565b50565b6101696101d336600461062b565b6102c5565b6101546101a23660046106b2565b6101546101a2366004610645565b61020761020236600461062b565b6102ea565b60408051928352602083019190915201610173565b61020761022a366004610746565b61032c565b6101546101c236600461040d565b6101546101c23660046105b8565b6101696101643660046106b2565b610169610267366004610705565b610374565b61015461027a3660046106cd565b50505050565b61020761028e366004610705565b61039b565b61015461018f3660046105e8565b604080516020810191829052600090819052906102be90806105d0565b9392505050565b604080516020810191829052600090819052906102e290806105d0565b90505b919050565b60408051602081019182905260009081905290819061030990806105d0565b6040805160208101918290526000905261032390806105d0565b91509150915091565b60408051602081019182905260009081905290819061034b90806105d0565b6040805160208101918290526000905261036590806105d0565b91509150965096945050505050565b6040805160208101918290526000908190529061039190806105d0565b9695505050505050565b6040805160208101918290526000908190529081906103ba90806105d0565b604080516020810191829052600090526103d490806105d0565b915091509550959350505050565b80356001600160a01b03811681146102e557600080fd5b803563ffffffff811681146102e557600080fd5b60006020828403121561041e578081fd5b6102be826103e2565b600080600080600080600080610100898b031215610443578384fd5b61044c896103e2565b975061045a60208a016103e2565b965061046860408a016103e2565b955061047660608a016103e2565b945061048460808a016103e2565b935061049260a08a016103e2565b925060c089013591506104a760e08a016103e2565b90509295985092959890939650565b600080604083850312156104c8578182fd5b6104d1836103e2565b946020939093013593505050565b600080604083850312156104f1578182fd5b823567ffffffffffffffff80821115610508578384fd5b818501915085601f83011261051b578384fd5b813560208282111561052f5761052f61078f565b8160051b604051601f19603f830116810181811086821117156105545761055461078f565b604052838152828101945085830182870184018b1015610572578889fd5b8896505b8487101561059b57610587816103f9565b865260019690960195948301948301610576565b5096506105ab90508782016103e2565b9450505050509250929050565b6000602082840312156105c9578081fd5b5035919050565b6000602082840312156105e1578081fd5b5051919050565b6000806000606084860312156105fc578283fd5b8335925061060c602085016103f9565b915060408401358015158114610620578182fd5b809150509250925092565b60006020828403121561063c578081fd5b6102be826103f9565b60008060408385031215610657578182fd5b610660836103f9565b915061066e602084016103e2565b90509250929050565b60008060006060848603121561068b578283fd5b610694846103f9565b92506106a2602085016103e2565b9150604084013590509250925092565b600080604083850312156106c4578182fd5b6104d1836103f9565b600080600080608085870312156106e2578384fd5b6106eb856103f9565b966020860135965060408601359560600135945092505050565b600080600080600060a0868803121561071c578283fd5b610725866103f9565b97602087013597506040870135966060810135965060800135945092505050565b60008060008060008060c0878903121561075e578384fd5b610767876103f9565b9860208801359850604088013597606081013597506080810135965060a00135945092505050565b634e487b7160e01b600052604160045260246000fdfea26469706673582212202af3213ea86b71beae7ff0f1662ff9013da7934ab9f533ed3654a5be78e849bd64736f6c63430008030033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106101375760003560e01c8063978210d4116100b8578063cd1a7b271161007c578063cd1a7b271461023d578063d969e8771461024b578063e228b2fa14610259578063e56acd961461026c578063e69ba10714610280578063e9c7ee181461029357610137565b8063978210d4146101e65780639dd912f9146101f45780639ff975171461021c578063c6b4766d1461022f578063c73fe5571461019457610137565b80633a27cdde116100ff5780633a27cdde146101a657806343500c4e1461017c5780634fb3943a146101b457806366a9e7c2146101c55780636b2c5c69146101d857610137565b8063057981ba1461013c5780630bfa5be0146101565780631b2614341461017c578063214e2e06146101815780632de9dac814610194575b600080fd5b61015461014a366004610427565b5050505050505050565b005b610169610164366004610645565b6102a1565b6040519081526020015b60405180910390f35b610154565b61015461018f366004610677565b505050565b6101546101a23660046104b6565b5050565b6101546101a23660046104df565b6101546101c236600461062b565b50565b6101696101d336600461062b565b6102c5565b6101546101a23660046106b2565b6101546101a2366004610645565b61020761020236600461062b565b6102ea565b60408051928352602083019190915201610173565b61020761022a366004610746565b61032c565b6101546101c236600461040d565b6101546101c23660046105b8565b6101696101643660046106b2565b610169610267366004610705565b610374565b61015461027a3660046106cd565b50505050565b61020761028e366004610705565b61039b565b61015461018f3660046105e8565b604080516020810191829052600090819052906102be90806105d0565b9392505050565b604080516020810191829052600090819052906102e290806105d0565b90505b919050565b60408051602081019182905260009081905290819061030990806105d0565b6040805160208101918290526000905261032390806105d0565b91509150915091565b60408051602081019182905260009081905290819061034b90806105d0565b6040805160208101918290526000905261036590806105d0565b91509150965096945050505050565b6040805160208101918290526000908190529061039190806105d0565b9695505050505050565b6040805160208101918290526000908190529081906103ba90806105d0565b604080516020810191829052600090526103d490806105d0565b915091509550959350505050565b80356001600160a01b03811681146102e557600080fd5b803563ffffffff811681146102e557600080fd5b60006020828403121561041e578081fd5b6102be826103e2565b600080600080600080600080610100898b031215610443578384fd5b61044c896103e2565b975061045a60208a016103e2565b965061046860408a016103e2565b955061047660608a016103e2565b945061048460808a016103e2565b935061049260a08a016103e2565b925060c089013591506104a760e08a016103e2565b90509295985092959890939650565b600080604083850312156104c8578182fd5b6104d1836103e2565b946020939093013593505050565b600080604083850312156104f1578182fd5b823567ffffffffffffffff80821115610508578384fd5b818501915085601f83011261051b578384fd5b813560208282111561052f5761052f61078f565b8160051b604051601f19603f830116810181811086821117156105545761055461078f565b604052838152828101945085830182870184018b1015610572578889fd5b8896505b8487101561059b57610587816103f9565b865260019690960195948301948301610576565b5096506105ab90508782016103e2565b9450505050509250929050565b6000602082840312156105c9578081fd5b5035919050565b6000602082840312156105e1578081fd5b5051919050565b6000806000606084860312156105fc578283fd5b8335925061060c602085016103f9565b915060408401358015158114610620578182fd5b809150509250925092565b60006020828403121561063c578081fd5b6102be826103f9565b60008060408385031215610657578182fd5b610660836103f9565b915061066e602084016103e2565b90509250929050565b60008060006060848603121561068b578283fd5b610694846103f9565b92506106a2602085016103e2565b9150604084013590509250925092565b600080604083850312156106c4578182fd5b6104d1836103f9565b600080600080608085870312156106e2578384fd5b6106eb856103f9565b966020860135965060408601359560600135945092505050565b600080600080600060a0868803121561071c578283fd5b610725866103f9565b97602087013597506040870135966060810135965060800135945092505050565b60008060008060008060c0878903121561075e578384fd5b610767876103f9565b9860208801359850604088013597606081013597506080810135965060a00135945092505050565b634e487b7160e01b600052604160045260246000fdfea26469706673582212202af3213ea86b71beae7ff0f1662ff9013da7934ab9f533ed3654a5be78e849bd64736f6c63430008030033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,50 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "LendingPoolAddressesProviderMock",
+  "sourceName": "contracts/mocks/LendingPoolAddressesProvider.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLendingPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lendingPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_lendingPool",
+          "type": "address"
+        }
+      ],
+      "name": "setLendingPool",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061010d806100206000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80630261bf8b146041578063113aa8b114606a578063a59a9973146099575b600080fd5b6000546001600160a01b03165b6040516001600160a01b03909116815260200160405180910390f35b6097607536600460ab565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b005b600054604e906001600160a01b031681565b60006020828403121560bb578081fd5b81356001600160a01b038116811460d0578182fd5b939250505056fea2646970667358221220d896aab305b6635ef9beb4bda243e3431dd80632a51334ab3fe7d145a77aecc064736f6c63430008030033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80630261bf8b146041578063113aa8b114606a578063a59a9973146099575b600080fd5b6000546001600160a01b03165b6040516001600160a01b03909116815260200160405180910390f35b6097607536600460ab565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b005b600054604e906001600160a01b031681565b60006020828403121560bb578081fd5b81356001600160a01b038116811460d0578182fd5b939250505056fea2646970667358221220d896aab305b6635ef9beb4bda243e3431dd80632a51334ab3fe7d145a77aecc064736f6c63430008030033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

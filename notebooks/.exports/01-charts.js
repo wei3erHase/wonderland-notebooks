@@ -1,10 +1,4 @@
 next(async()=>{
-    //     uncomment to revert to snapshot
-    //     TODO: snapshots working only first time
-        await snapshots.revert(setupSnap)    
-})
-
-next(async()=>{
     [ethProvider] = await ethers.getSigners()
     await ethProvider.sendTransaction({to:provider._address, value:toUnit(100)})
 })
@@ -17,9 +11,10 @@ next(async() =>{
 
     $.setPeriodTrace(432000)
     
-    $.addViewTrace(dai, 'balanceOf', [provider._address])
+    $.addViewTrace(synthF3Long, 'totalSupply', [])
+//     $.addViewTrace(synthF3Short, 'totalSupply', [])
 
-    $.addEventTrace(dai.web3, 'Transfer')    
+//     $.addEventTrace(dai.web3, 'Transfer')    
 })
 
 // credit mining without working
@@ -27,7 +22,7 @@ next(async() =>{
 next(async()=>{
     
     await $.sleepAndRecord(
-        $.time(4,'days'),
+        $.time(10,'days'),
         $.time(4,'hours')
     )
     

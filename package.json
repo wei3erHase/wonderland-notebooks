@@ -34,7 +34,7 @@
     "moment": "2.29.1",
     "plotly-notebook-js": "0.1.2",
     "web3": "^1.4.0",
-    "web3-utils": "1.4.0"
+    "web3-utils": "^1.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "12.1.4",

@@ -6,7 +6,7 @@ module.exports = {
   defaultNetwork: 'hardhat',
   networks: {
     hardhat: {
-      hardfork: 'london',
+      hardfork: 'berlin',
       allowUnlimitedContractSize: true,
       gasPrice: 'auto',
     },
@@ -17,6 +17,11 @@ module.exports = {
       optimizer: {
         enabled: true,
         runs: 200,
+      },
+      outputSelection: {
+        "*": {
+          "*": ["storageLayout"]
+        }
       },
     },
   },
