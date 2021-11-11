@@ -34,7 +34,7 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
 
     os.rename(script_fname, base_path + '.exports/' + file_name)
 
-c.FileContentsManager.post_save_hook = script_post_save
+# c.FileContentsManager.post_save_hook = script_post_save
 
 c.ServerApp.root_dir = 'notebooks/'
 
