@@ -12,6 +12,7 @@ const { advanceTimeAndBlock } = require('../utils/evm');
 
 class Notebook {
   traces = [];
+  balances = [];
   events = [];
 
   async setup(blockNumber) {
@@ -129,6 +130,15 @@ class Notebook {
     });
   }
 
+  addBalanceTrace(contract, address, decimals, traceName = null) {
+    this.balances.push({
+      contract,
+      address,
+      decimals,
+      traceName,
+    });
+  }
+
   // /* TODO: add functionTrace */
   // async addFunctionTrace(fn){
   //   (x,y) = await fn();
@@ -162,6 +172,12 @@ class Notebook {
         await this.notebookRecorder.recordView(trace.contract, trace.viewName, trace.viewArguments, index);
       })
     );
+
+    await Promise.all(
+      this.balances.map(async (balance, index) => {
+        await this.notebookRecorder.recordBalance(balance.contract, balance.viewName, balance.address, balance.decimals, index + 100);
+      })
+    );
   }
 
   async resetRecording() {
@@ -185,6 +201,19 @@ class Notebook {
       ]);
     });
 
+    this.balances.map((balance, index) => {
+      plot.addTraces([
+        {
+          ...this.notebookRecorder.getViewRecording(index + 100),
+          name: balance.traceName || balance.viewName,
+          line: {
+            width: 1,
+            // dash: 'dashdot',
+          },
+        },
+      ]);
+    });
+
     /* TODO: snapshots not working with web3 */
     await Promise.all(
       this.events.map(async (e, i) => {
@@ -198,18 +227,18 @@ class Notebook {
       })
     );
 
-    plot.addTraces([
-      {
-        ...(await this.notebookRecorder.getPeriodTrace(this.period)),
-        name: 'Period',
-        mode: 'markers',
-        marker: {
-          symbol: 'line-ns-open',
-          size: 12,
-          color: 'rgb(0, 0, 0)',
-        },
-      },
-    ]);
+    // plot.addTraces([
+    //   {
+    //     ...(await this.notebookRecorder.getPeriodTrace(this.period)),
+    //     name: 'Period',
+    //     mode: 'markers',
+    //     marker: {
+    //       symbol: 'line-ns-open',
+    //       size: 12,
+    //       color: 'rgb(0, 0, 0)',
+    //     },
+    //   },
+    // ]);
 
     $$html$$ = plot.render();
   }

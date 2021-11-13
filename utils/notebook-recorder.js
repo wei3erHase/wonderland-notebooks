@@ -21,6 +21,14 @@ class NotebookRecorder {
     this.viewTrace[id].y.push(bnToNumber(viewResult));
   }
 
+  async recordBalance(contract, viewName, address, decimals, id) {
+    if (!this.viewTrace[id]) this.viewTrace[id] = { x: [], y: [] };
+
+    const viewResult = (await contract['balanceOf'](address)) / 10**decimals;
+    this.viewTrace[id].x.push(unixToDate(await getLatestBlockTimestamp()));
+    this.viewTrace[id].y.push(bnToNumber(viewResult));
+  }
+
   getViewRecording(id) {
     return this.viewTrace[id];
   }

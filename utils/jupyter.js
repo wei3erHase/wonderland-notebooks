@@ -15,7 +15,10 @@ const unixToDate = (unix) => {
 
 const precision = 10 ** 2;
 const bnToNumber = (bn) => {
+if(bn._isBigNumber){
   return (test = Number(bn.mul(precision).div(toUnit(1)).toString()) / precision);
+}
+return bn
 };
 
 exports.next = next;
