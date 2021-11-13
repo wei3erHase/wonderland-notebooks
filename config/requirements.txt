@@ -1,4 +1,4 @@
-jupyterlab==3.0.16
+jupyterlab==3.0.17
 matplotlib-inline==0.1.2
 web3==5.21.0
 matplotlib==3.4.2
